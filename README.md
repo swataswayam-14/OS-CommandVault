@@ -9,14 +9,6 @@ Welcome to my comprehensive guide to command-line operations in Windows and Linu
 - **Advanced Operations**: More complex operations like searching and I/O redirection
 - **Command Reference**: Quick reference guides for Windows and Linux commands
 
-## 🚀 Getting Started
-
-If you're new to command-line interfaces:
-
-1. Start with the [Windows Directories](./directory-structure/windows-directories.md) or [Linux Directories](./directory-structure/linux-directories.md) guide
-2. Move on to [Navigation](./basic-commands/navigation.md) to learn how to move around the file system
-3. Learn how to manipulate files in [File Operations](./basic-commands/file-operations.md)
-
 ## 🔄 Work in Progress
 
 These notes are continuously being updated and expanded. Feel free to check back for more content!
