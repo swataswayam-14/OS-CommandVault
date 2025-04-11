@@ -82,30 +82,3 @@ find ~/Documents -name "*.pdf" -exec cp {} ~/PDFBackup/ \;
 # Count occurrences of a word across files
 grep -r "error" ./logs/ | wc -l
 ```
-
-## Search Decision Flowchart
-
-```mermaid
-flowchart TD
-    A[Need to find something] --> B{What are you searching for?}
-    B -- Text within files --> C{Which OS?}
-    B -- Files by name/type --> D{Which OS?}
-    
-    C -- Windows --> E[Use Select-String]
-    C -- Linux --> F[Use grep]
-    
-    D -- Windows --> G[Use ls -Recurse -Filter]
-    D -- Linux --> H[Use find command]
-    
-    E --> I[Analyze results]
-    F --> I
-    G --> I
-    H --> I
-    
-    I --> J{Need to process results?}
-    J -- Yes --> K{Which OS?}
-    J -- No --> L[Done]
-    
-    K -- Windows --> M[Use pipeline | to pass to another command]
-    K -- Linux --> N[Use pipeline | or -exec with find]
-```

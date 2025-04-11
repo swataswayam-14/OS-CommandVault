@@ -133,16 +133,3 @@ history
 ```
 
 **Navigation Workflow**
-
-```mermaid
-graph TD
-    A[Start] --> B[Check Current Directory: pwd]
-    B --> C[List Contents: ls]
-    C --> D{Need to change directory?}
-    D -- Yes --> E[Change Directory: cd path]
-    D -- No --> F{Need to create directory?}
-    F -- Yes --> G[Create Directory: mkdir name]
-    F -- No --> H[Continue working in current directory]
-    E --> C
-    G --> C
-```

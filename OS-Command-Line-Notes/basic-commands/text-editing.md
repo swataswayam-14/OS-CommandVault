@@ -53,30 +53,6 @@ nano hello.txt
 | gedit | GUI | General text editing |
 | VS Code | GUI | Development, advanced editing |
 
-## Text Editor Selection Guide
-
-```mermaid
-flowchart TD
-    A[Need to edit text file] --> B{Which OS?}
-    B -- Windows --> C{Experience level?}
-    B -- Linux --> D{Experience level?}
-    
-    C -- Beginner --> E[Notepad]
-    C -- Intermediate --> F[Notepad++]
-    C -- Advanced --> G[VS Code]
-    
-    D -- Beginner --> H[nano]
-    D -- Intermediate --> I[vim with basic commands]
-    D -- Advanced --> J[vim or emacs]
-    
-    E --> K[Simple editing]
-    F --> L[Code editing with highlighting]
-    G --> M[Full development environment]
-    
-    H --> N[Simple terminal editing]
-    I --> O[Efficient text manipulation]
-    J --> P[Customized editing environment]
-```
 
 ## Basic Workflow
 

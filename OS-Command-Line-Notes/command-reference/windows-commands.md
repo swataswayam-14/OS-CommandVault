@@ -72,20 +72,6 @@ In Command Prompt:
 dir /?
 ```
 
-## Command Execution
-
-```mermaid
-flowchart TD
-    A[Command Input] --> B{Command Type?}
-    B -- PowerShell Cmdlet --> C[Execute Native PowerShell]
-    B -- PowerShell Alias --> D[Translate to Cmdlet]
-    B -- CMD/DOS Command --> E[Execute via Compatibility Layer]
-    C --> F[Process Command]
-    D --> F
-    E --> F
-    F --> G[Return Result]
-```
-
 ## Parameter Types
 
 PowerShell uses various parameter types:

@@ -66,20 +66,3 @@ tail fruits.txt
 head -n 5 fruits.txt  # First 5 lines
 tail -n 15 fruits.txt  # Last 15 lines
 ```
-
-## Content Viewing Decision Tree
-
-```mermaid
-flowchart TD
-    A[Need to view file] --> B{File size?}
-    B -- Small file --> C[Use cat]
-    B -- Large file --> D{Which OS?}
-    D -- Windows --> E[Use more]
-    D -- Linux --> F[Use less]
-    C --> G[Complete content shown]
-    E --> H[Navigate with Enter/Space/q]
-    F --> I[Navigate with arrows/g/G/q]
-    G --> J{Need only part of file?}
-    J -- Yes --> K{Which part?}
-    K -- Beginning --> L[Use cat -Head or head]
-    K -- End --> M[Use cat -Tail or tail]

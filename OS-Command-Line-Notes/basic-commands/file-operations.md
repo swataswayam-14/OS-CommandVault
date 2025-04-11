@@ -106,13 +106,3 @@ flowchart TD
     E --> G
     F --> G
 ```
-
-### Move Operation
-```mermaid
-flowchart TD
-    A[Select Source File(s)] --> B{Rename or Move?}
-    B -- Rename --> C[mv oldname newname]
-    B -- Move --> D[mv source destination]
-    C --> E[Operation Complete]
-    D --> E
-```

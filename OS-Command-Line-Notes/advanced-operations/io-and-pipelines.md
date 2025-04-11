@@ -94,22 +94,6 @@ ls | wc -l
 du -h | sort -hr | head -5
 ```
 
-## I/O Stream Visual Model
-
-```mermaid
-graph LR
-    A[Keyboard] -->|stdin| B[Command/Process]
-    B -->|stdout| C[Screen]
-    B -->|stderr| D[Screen]
-    
-    E[File] -.->|stdin < file| B
-    B -.->|stdout > file| F[Output File]
-    B -.->|stderr 2> file| G[Error File]
-    
-    H[Command1] -->|stdout| I[pipe |]
-    I -->|stdin| J[Command2]
-```
-
 ## Common Pipeline Patterns
 
 ### Data Processing Pipelines

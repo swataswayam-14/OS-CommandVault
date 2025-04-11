@@ -83,15 +83,3 @@ tail -f -n 10 /var/log/syslog
 # Find the largest files in a directory
 du -h /home | sort -hr | head -10
 ```
-
-## Command Execution Flow
-
-```mermaid
-flowchart TD
-    A[Command Input] --> B[Shell Parses Command]
-    B --> C{Built-in Command?}
-    C -- Yes --> D[Execute Internal Shell Command]
-    C -- No --> E[Search in PATH]
-    E --> F{Command Found?}
-    F -- Yes --> G[Execute External Command]
-    F -- No --> H[Command Not Found Error]
